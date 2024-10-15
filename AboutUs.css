@@ -14,8 +14,8 @@ h1, h2 {
 
 /* Header Styles */
 header {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
+/*     background-color: rgba(0, 0, 0, 0.8);
+    color: #fff; */
     padding: 20px;
     position: fixed;
     top: 0;
@@ -53,7 +53,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     position: relative;
 }
 
