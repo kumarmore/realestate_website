@@ -14,7 +14,6 @@ h1, h2 {
 
 /* Header Styles */
 header {
-
     color: #fff;
     padding: 20px;
     position: fixed;
@@ -58,7 +57,7 @@ nav a:hover {
 }
 
 .hero-content {
-    background-color: rgba(0, 0, 0, 0.6);
+    /* Removed the black background color */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
