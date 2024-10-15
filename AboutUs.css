@@ -14,7 +14,7 @@ h1, h2 {
 
 /* Header Styles */
 header {
-
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 20px;
     position: fixed;
@@ -48,12 +48,12 @@ nav a:hover {
 
 /* Hero Section */
 .about-us-hero {
-    background: url('images/aboutus/AboutUs.jpg') no-repeat center center/cover;
+    background: url('../images/aboutus/AboutUs.jpg.jpg') no-repeat center center/cover;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: red;
+    color: white;
     position: relative;
 }
 
@@ -106,4 +106,4 @@ nav a:hover {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-} 
+}
