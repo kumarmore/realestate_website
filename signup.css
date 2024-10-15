@@ -1,0 +1,150 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #806c6c;
+    color: #333;
+    position: relative;
+}
+
+/* Background Video Styling */
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Content Layer */
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #f39c12;
+    transition: 0.4s ease;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Sign Up Section */
+.signup-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Adjust width to be more responsive */
+    max-width: 400px; /* Set a maximum width to keep the form compact */
+    margin: 20px auto; /* Center the form on the page */
+}
+
+.signup-section h1 {
+    font-size: 28px; /* Reduced size to fit better */
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeInSlideDown 1s ease-in-out;
+}
+
+/* Input field styles */
+.signup-form input {
+    width: 100%; /* Ensure input fields take up full width of the container */
+    max-width: 350px; /* Limit the maximum width of input fields */
+    padding: 10px; /* Adjust padding for a cleaner look */
+    margin: 10px auto; /* Center input fields within the form */
+    border: 2px solid #dd2476;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.signup-form input:focus {
+    border-color: #ff512f;
+}
+
+/* Button styling */
+button {
+    background-color: #ff512f;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Ensure button takes up full width of the container */
+    max-width: 350px; /* Limit the maximum width of the button */
+    margin: 10px auto; /* Center the button within the form */
+}
+
+button:hover {
+    background-color: #dd2476;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInSlideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInSlideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
